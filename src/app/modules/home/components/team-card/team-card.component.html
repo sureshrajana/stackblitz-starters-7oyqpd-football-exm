@@ -1,0 +1,70 @@
+<div class="team-card">
+    <div class="team-card-content">
+        <div>
+            <img width="100" alt="{{team.team.name}} Logo" [src]="team.team.logo"/>
+        </div>
+        <div class="team-card-content-table separator">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="size4 right">
+                            Nombre de Equipo
+                        </td>
+                        <td class="size4 left">
+                            {{ team.team.name }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="size4 right">
+                           Año Fundación
+                        </td>
+                        <td class="size1 left">
+                            {{ team.team.founded }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="size4 right">
+                           País
+                        </td>
+                        <td class="size1 left">
+                            <img width="25" alt="{{team.team.country}} Flag" [src]="countrySelected"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="team-card-content-table left-space right">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="size2 right">
+                            Estadio
+                        </td>
+                        <td class="size3 left">
+                            {{ team.venue.name }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="size2 right">
+                           Aforo
+                        </td>
+                        <td class="size3 left">
+                            {{ team.venue.capacity }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="size2 right">
+                           Dirección
+                        </td>
+                        <td class="size3 left">
+                            {{ team.venue.address }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <img width="150" alt="{{team.venue.name}} Logo" [src]="team.venue.image"/>
+        </div>
+    </div>
+</div>

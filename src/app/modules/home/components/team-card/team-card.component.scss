@@ -1,0 +1,56 @@
+.team-card {
+    align-items: center;
+    background-color: rgba(151, 147, 147, 0.5);
+    border-collapse: collapse;
+    border-radius: 8px;
+    font-weight: 600;
+    gap: 10px;
+    left: 0;
+    margin: 40px 40px 20px;
+    padding: 20px 40px;
+    place-items: center;
+    position: relative;
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 100%;
+
+        &-table {
+            width: 250px;
+            
+            tbody td {
+                &.size1 {
+                    width: 50px;
+                }
+                &.size2 {
+                    width: 100px;
+                }
+                &.size3 {
+                    width: 150px;
+                }
+                &.size4 {
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    .right {
+        padding-right: 10px;
+        text-align: right;
+    }
+    .center {
+        text-align: center;
+    }
+
+    .separator {
+        padding-right: 20px;
+        border-right: 1.5px solid black;
+    }
+
+    .left-space {
+        padding-left: 20px;
+    }
+}

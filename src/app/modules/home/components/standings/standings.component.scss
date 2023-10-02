@@ -1,0 +1,71 @@
+.standgins {
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    gap: 10px;
+    height: 60px;
+    left: 0;
+    padding: 0 40px;
+    place-items: center;
+    position: absolute;
+    right: 0;
+    top: 100px;
+
+    &-table {
+        background-color: rgba(151, 147, 147, 0.5);
+        border-collapse: collapse;
+        padding: 20px 20px;
+        border-radius: 8px;
+        margin: auto;
+        width: 100%;
+        
+        thead {
+            height: 40px;
+
+            th {
+                &.size1 {
+                    width: 50px;
+                }
+                &.size2 {
+                    width: 100px;
+
+                }
+                &.size3 {
+                    width: 150px;
+                }
+                &.size4 {
+                    width: 200px;
+                }
+            }
+        }
+        tbody {
+            tr {
+                border-bottom: 1pt solid black;
+
+                td {
+                    &.size1 {
+                        width: 50px;
+                    }
+                    &.size2 {
+                        width: 100px;
+                    }
+                    &.size3 {
+                        width: 150px;
+                    }
+                    &.size4 {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .right {
+        padding-right: 10px;
+        text-align: right;
+    }
+    .center {
+        text-align: center;
+    }
+}

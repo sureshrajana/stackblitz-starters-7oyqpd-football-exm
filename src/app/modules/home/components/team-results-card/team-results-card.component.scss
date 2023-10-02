@@ -1,0 +1,41 @@
+.team-results-card {
+    align-items: center;
+    border-collapse: collapse;
+    display: flex;
+    font-weight: 600;
+    gap: 10px;
+    left: 0;
+    padding: 20px 40px 40px;
+    place-items: center;
+    position: relative;
+
+    &-table {
+        background-color: rgba(151, 147, 147, 0.5);
+        padding: 20px 0;
+        border-radius: 8px;
+        margin: auto;
+        width: 100%;
+        tbody td {
+            &.size1 {
+                width: 50px;
+            }
+            &.size2 {
+                width: 100px;
+            }
+            &.size3 {
+                width: 150px;
+            }
+            &.size4 {
+                width: 200px;
+            }
+        }
+    }
+
+    .right {
+        padding-right: 10px;
+        text-align: right;
+    }
+    .center {
+        text-align: center;
+    }
+}

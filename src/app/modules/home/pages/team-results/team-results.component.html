@@ -1,0 +1,8 @@
+<div class="fixtures">
+    <app-team-card [countries]="countries" [team]="team" *ngIf="team"></app-team-card>
+    <app-team-results-card [fixtures]="fixtures"></app-team-results-card>
+    <div class="fixtures-footer">
+        <button class="back-btn" (click)="goToHome()">Back</button>
+    </div>
+</div>
+

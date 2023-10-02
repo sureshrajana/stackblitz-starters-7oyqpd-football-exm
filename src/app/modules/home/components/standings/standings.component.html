@@ -1,0 +1,48 @@
+<div class="standgins">
+    <table class="standgins-table">
+        <thead>
+            <tr>
+            <th class="size1"></th>
+            <th class="size2"></th>
+            <th class="size4 right">Name</th>
+            <th class="size1 right">Games</th>
+            <th class="size1 right">W</th>
+            <th class="size1 right">L</th>
+            <th class="size1 right">D</th>
+            <th class="size3 right">Goal Difference</th>
+            <th class="size1 right">Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let standing of standings; trackBy: trackByItem; let i=index;">
+            <td class="size1 center">
+                {{ standing.rank }}
+            </td>
+            <td class="size2 center">
+                <img width="40" alt="{{standing.team.name}} Logo" [src]="standing.team.logo"/>
+            </td>
+            <td class="size4 right">
+                <a [routerLink] ="['/home/team', leagueId, standing.team.id, currentYear]" routerLinkActive="router-link-active" >{{ standing.team.name }}</a>
+            </td>
+            <td class="size1 right">
+                {{ standing.all.played}}
+            </td>
+            <td class="size1 right">
+                {{ standing.all.win}}
+            </td>
+            <td class="size1 right">
+                {{ standing.all.lose}}
+            </td>
+            <td class="size1 right">
+                {{ standing.all.draw}}
+            </td>
+            <td class="size3 right">
+                {{ standing.goalsDiff}}
+            </td>
+            <td class="size1 right">
+                {{ standing.points}}
+            </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
