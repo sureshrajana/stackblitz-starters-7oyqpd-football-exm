@@ -11,9 +11,9 @@ import {
   LeagueServiceModule,
   FixtureServiceModule,
   TeamServiceModule,
-  SecureStorageServiceModule } from './services';
+  SecureStorageServiceModule,
+} from './services';
 import { TeamResultsCardComponent } from './components/team-results-card/team-results-card.component';
-import { TeamCardComponent } from './components/team-card/team-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,6 @@ import { TeamCardComponent } from './components/team-card/team-card.component';
     StandingsComponent,
     TeamResultsComponent,
     TeamResultsCardComponent,
-    TeamCardComponent
   ],
   imports: [
     CommonModule,
@@ -32,8 +31,15 @@ import { TeamCardComponent } from './components/team-card/team-card.component';
     LeagueServiceModule,
     FixtureServiceModule,
     TeamServiceModule,
-    SecureStorageServiceModule
+    SecureStorageServiceModule,
   ],
-  providers: [CountryServiceModule, FixtureServiceModule, LeagueServiceModule, StandingsServiceModule, TeamServiceModule, SecureStorageServiceModule]
+  providers: [
+    CountryServiceModule,
+    FixtureServiceModule,
+    LeagueServiceModule,
+    StandingsServiceModule,
+    TeamServiceModule,
+    SecureStorageServiceModule,
+  ],
 })
-export class HomeModule { }
+export class HomeModule {}

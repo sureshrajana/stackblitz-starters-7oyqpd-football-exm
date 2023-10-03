@@ -1,34 +1,44 @@
 .header {
-    padding: 0 20px;
+  padding: 0 20px;
+  align-items: center;
+  place-items: center;
+  display: flex;
+  font-weight: 600;
+  gap: 10px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__button {
+    margin: auto;
+    justify-content: center;
     align-items: center;
-    place-items: center;
-    display: flex;
-    font-weight: 600;
-    gap: 10px;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    &__button {
-        margin: auto;
-
-        :hover {
-            cursor: pointer;
-        }
-
-        &-label {
-            bottom: 10px;
-            position: relative;
-        }
-
-        &-image {
-            padding-right: 10px;
-        }
-
-        &--selected {
-            color: orange;
-        }
+    :hover {
+      cursor: pointer;
     }
+
+    &-label {
+      bottom: 10px;
+      position: relative;
+    }
+
+    &-image {
+      padding-right: 10px;
+    }
+
+    &--selected {
+      color: blue;
+    }
+  }
+}
+.header__button-container {
+  display: flex;
+  margin-top: 1rem;
+  gap: 10px;
+}
+.header-text {
+  justify-content: center;
+  display: flex;
 }
